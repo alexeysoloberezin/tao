@@ -733,6 +733,8 @@ body.fixed {
   .homebody .swiper-container {
     height: 710px;
     position: relative; }
+  .homebody .swiper-slide {
+    opacity: 1 !important; }
   .homebody-bg {
     position: absolute;
     top: 0;
