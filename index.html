@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="assets/css/style.min.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Useful meta tags -->
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -26,41 +27,42 @@
                     <img src="assets/images/logo.png" alt="">
                   </picture>
                 </div>
-                <div class="header__top-text">
+                <div class="header__top-text" >
                   <p>Доставка товаров из Китая в Россию</p>
                   <p>Всего 14 дней до Москвы</p>
                 </div>
-                <div class="header__top-curse">
+                <div class="header__top-curse" >
                   <p class="header__top-cursetext">Текущий курс:</p>
                   <p class="header__top-cursevalue">1 ¥ = 11.694 Р</p>
                 </div>
-                <div class="socials">
+                <div class="socials" >
                   <ul class="socials-list">
-                    <li>
+                    <li >
                       <a href="#">            
                         <img src="assets/images/icon/vk.png" alt="">         
                       </a>
                     </li>
-                    <li>
+                    <li    >
                       <a href="#">            
                         <img src="assets/images/icon/Viber.png" alt="">         
                       </a>
-                    </li>
-                    <li>
+                    </lita-aos=>
+                    <li     >
                       <a href="#">            
                         <img src="assets/images/icon/telegram.png" alt="">         
                       </a>
                     </li>
-                    <li>
+                    <li     >
                       <a href="#">            
                         <img src="assets/images/icon/whatsapp.png" alt="">         
                       </a>
                     </li>
                   </ul>
                 </div>
-                <div class="header__top-account">
+                <div class="header__top-account" >
                   <img src="assets/images/icon/user.svg" alt="">
-                  <p class="header__top-login">Войти на сайт</p>
+                  <p class="header__top-login ">Войти на сайт</p>
+                  <p class="header__top-login none">Регистрация</p>
                 </div>
                 <div class="burger burger-2">
                   <input type="checkbox" name="burger2" id="burger2"/>
@@ -116,7 +118,8 @@
                     <p>Текущий курс:</p>
                     <p class="header__mobmenu-curse">1 ¥ = 11.694 Р</p>
                   </div>
-                  <a class="header__mobmenu-btn" href="#"><img src="assets/images/icon/user-white.svg" alt=""> Войти на сайт</a>
+                  <a class="header__mobmenu-btn " href="#"><img src="assets/images/icon/user-white.svg" alt=""> Войти на сайт</a>
+                  <a class="header__mobmenu-btn none" href="#"><img src="assets/images/icon/user-white.svg" alt=""> Регистрация</a>
                 </div>
                
               </div>      
@@ -127,36 +130,62 @@
         <main class="main">
             
             <section class="homebody">
-              <picture>
-                <source srcset="assets/images/mobheader.jpg" media="(max-width:390px)">
-                <source srcset="assets/images/header.webp" type="image/webp">
-                <img class="homebody-bg" src="assets/images/header.jpg" alt="">
-              </picture>
-              <div class="container">
-                <div class="homebody__wrapper">
-                  <h1 class="homebody__title">
-                    Доставка товаров 
-                    из <span>китая</span> в любую 
-                    точку мира
-                  </h1>
-                  <div class="homebody__arrow">
-                    <img src="assets/images/icon/right-arrow.svg" alt="">
+              <div id="homebody-slider" class="swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <picture>
+                      <source srcset="assets/images/mobheader.jpg" media="(max-width:390px)">
+                      <source srcset="assets/images/header.webp" type="image/webp">
+                      <img class="homebody-bg" src="assets/images/header.jpg" alt="">
+                    </picture>
+                    <div class="container">
+                      <div class="homebody__wrapper">
+                        <h1 class="homebody__title" >
+                          Доставка товаров 
+                          из <span>китая</span> в любую 
+                          точку мира
+                        </h1>
+                        <div class="homebody__arrow" >
+                          <img src="assets/images/icon/right-arrow.svg" alt="">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <picture>
+                      <source srcset="assets/images/mobheader.jpg" media="(max-width:390px)">
+                      <source srcset="assets/images/header.webp" type="image/webp">
+                      <img class="homebody-bg" src="assets/images/header.jpg" alt="">
+                    </picture>
+                    <div class="container">
+                      <div class="homebody__wrapper">
+                        <h1 class="homebody__title">
+                          Доставка товаров 
+                          из <span>китая</span> в любую 
+                          точку мира
+                        </h1>
+                        <div class="homebody__arrow" >
+                          <img src="assets/images/icon/right-arrow.svg" alt="">
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
               
+              
               <div class="homebody__inner">
-                <div class="homebody__box">
+                <div class="homebody__box" >
                   <img src="assets/images/icon/guarantee.svg" alt="">
                   <h3 class="homebody__box-title">Гарантия доставки</h3>
                   <p>Мы лично забираем все посылки и бережно доставляем в Россию. К тому же это значительно сокращает время Вашего ожидания.</p>
                 </div>
-                <div class="homebody__box">
+                <div class="homebody__box" >
                   <img src="assets/images/icon/support.svg" alt="">
                   <h3 class="homebody__box-title">Всегда на связи</h3>
                   <p>Наши специалисты всегда онлайн для того чтобы ответить на любые интересующие вас вопросы о доставке из Китая.</p>
                 </div>
-                <div class="homebody__box">
+                <div class="homebody__box" >
                   <img src="assets/images/icon/order.svg" alt="">
                   <h3 class="homebody__box-title">Удобный заказ</h3>
                   <p>Мы разработали и внедрили удобный функционал заказа в 3 шага, который позволяет быстро оформлять и контролировать ваш заказ.</p>
@@ -172,9 +201,9 @@
                 </picture>    
               </div>
               <div class="about__wrapper">
-                <h2 class="title">Почему нашу компанию выбирают?</h2>
-                <p class="subtitle">Более 5000 довольных клиентов</p>
-                <div class="about__inner">
+                <h2 class="title" >Почему нашу компанию выбирают?</h2>
+                <p class="subtitle" >Более 5000 довольных клиентов</p>
+                <div class="about__inner" data-aos="zoom-in-right">
                   <div class="about__inner-title">
                     <p class="about__inner-title-1">01</p>
                     <p class="about__inner-title-2">01</p>
@@ -187,7 +216,7 @@
                     и&nbsp;заниматься делами.
                   </p>
                 </div>
-                <div class="about__inner">
+                <div class="about__inner" data-aos="zoom-in-right">
                   <div class="about__inner-title">
                     <p class="about__inner-title-1">02</p>
                     <p class="about__inner-title-2">02</p>
@@ -197,7 +226,7 @@
                   <h4 class="about__inner-subtitle">Комиссия <span>0%</span></h4>
                   <p class="about__inner-txt">Отсутствие минимальной стоимости заказа, т.е. <span>можете оформлять заказ на любую сумму.</span>  Наши тарифы одни из самых низких в этом секторе бизнеса.</p>
                 </div>
-                <div class="about__inner">
+                <div class="about__inner" data-aos="zoom-in-right">
                   <div class="about__inner-title">
                     <p class="about__inner-title-1">03</p>
                     <p class="about__inner-title-2">03</p>
@@ -209,7 +238,7 @@
                 </div>
               </div>
               <p class="about-bgtext">STORETAO</p>
-              <img class="cirlce1" src="assets/images/icon/bgitem.png" alt="">
+              <img class="cirlce1" src="assets/images/icon/bgitem.png" alt="" >
             </section>
             <section class="patners">
               <div class="container">
@@ -217,9 +246,9 @@
                 <p class="subtitle">Взамен мы гарантируем доставку товара в идеальном качестве и точно в срок</p>
                 <div class="patners__wrapper">
                   <ul>
-                    <li>
+                    <li >
                       <a href="taobao.com">taobao.com</a>
-                      <div class="patners__box">
+                      <div class="patners__box" data-aos="flip-up">
                         <picture>
                           <source srcset="assets/images/partners/taobao.webp" type="image/webp">
                           <img src="assets/images/partners/taobao.png" alt="">
@@ -229,7 +258,7 @@
                     </li>
                     <li>
                       <a href="tmall.com">tmall.com</a>
-                      <div class="patners__box">
+                      <div class="patners__box" data-aos="flip-up">
                         <picture>
                           <source srcset="assets/images/partners/tmail.webp" type="image/webp">
                           <img src="assets/images/partners/tmail.png" alt="">
@@ -239,7 +268,7 @@
                     </li>
                     <li>
                       <a href="1688.com">1688.com</a>
-                      <div class="patners__box">
+                      <div class="patners__box" data-aos="flip-up">
                         <picture>
                           <source srcset="assets/images/partners/1688.webp" type="image/webp">
                           <img src="assets/images/partners/1688.png" alt="">
@@ -252,12 +281,12 @@
               </div>
             </section>
             <section class="help">
-              <img class="cirlce2" src="assets/images/icon/bgitem2.png" alt="">
+              <img class="cirlce2" src="assets/images/icon/bgitem2.png" alt="" >
               <div class="container">
                 <h2 class="title">Помощь</h2>
                 <p class="subtitle">Руководитель по нашему сайту. Содержит ответы на все популярные вопросы</p>
                 <ul class="help__wrapper">
-                  <li class="help__box">
+                  <li class="help__box" data-aos="flip-left">
                     <a class="help__box-link" href="#">
                       <picture>
                         <source srcset="assets/images/base/help1mob.webp" media="(max-width:350px)" type="image/webp">
@@ -268,7 +297,7 @@
                       <p class="white">Выбор размера</p>
                     </a>        
                   </li>
-                  <li class="help__box">
+                  <li class="help__box" data-aos="flip-left">
                     <a class="help__box-link" href="#">
                       <picture>
                         <source srcset="assets/images//base/help2.webp" type="image/webp">
@@ -277,7 +306,7 @@
                       <p class="white">Выбор цвета</p>
                     </a>      
                   </li>
-                  <li class="help__box">
+                  <li class="help__box" data-aos="flip-left">
                     <a class="help__box-link" href="#">
                       <picture>
                         <source srcset="assets/images/base/help3mob.webp" media="(max-width:350px)" type="image/webp">
@@ -289,7 +318,7 @@
                         на «taobao»</p>
                     </a>       
                   </li>
-                  <li class="help__box">
+                  <li class="help__box" data-aos="flip-left">
                     <a class="help__box-link" href="#">
                       <picture>
                         <source srcset="assets/images//base/help4.webp" type="image/webp">
@@ -298,7 +327,7 @@
                       <p class="white">Как оформить заказ</p>
                     </a>        
                   </li>
-                  <li class="help__box">
+                  <li class="help__box" data-aos="flip-left">
                     <a class="help__box-link" href="#">
                       <picture>
                         <source srcset="assets/images/base/help5mob.webp" media="(max-width:350px)" type="image/webp">
@@ -309,7 +338,7 @@
                       <p>Оплата</p>
                     </a>        
                   </li>
-                  <li class="help__box">
+                  <li class="help__box" data-aos="flip-left">
                     <a class="help__box-link" href="#">
                       <picture>
                         <source srcset="assets/images//base/help6.webp" type="image/webp">
@@ -329,21 +358,21 @@
               <div class="container">
                 <h2 class="title">Как строится работа с нами</h2>
                 <p class="subtitle">Несколько простых шагов для получения товара</p>
-                <div class="plan__wrapper">
-                  <div class="plan__inner">
-                    <div class="plan__box">
+                <div class="plan__wrapper" data-aos="zoom-in-up">
+                  <div class="plan__inner" >
+                    <div class="plan__box" data-aos="zoom-in-up">
                       <div class="plan__box-nomber">01</div>
                       <p class="plan__box-stap">шаг 1</p>
                       <p class="plan__box-txt">Клиент копирует<br>
                         ссылку на товар</p>
                     </div>
-                    <div class="plan__box plan__box-op">
+                    <div class="plan__box plan__box-op" data-aos="zoom-in-up">
                       <div class="plan__box-nomber">02</div>
                       <p class="plan__box-stap">шаг 2</p>
                       <p class="plan__box-txt">Добавляет ее<br>
                         в поле на сайте</p>
                     </div>
-                    <div class="plan__box">
+                    <div class="plan__box" data-aos="zoom-in-up">
                       <div class="plan__box-nomber">03</div>
                       <p class="plan__box-stap">шаг 3</p>
                       <p class="plan__box-txt">Вводит информацию<br> 
@@ -351,19 +380,19 @@
                     </div>
                   </div>      
                   <div class="plan__inner">
-                    <div class="plan__box plan__box-op">
+                    <div class="plan__box plan__box-op" data-aos="zoom-in-up">
                       <div class="plan__box-nomber">04</div>
                       <p class="plan__box-stap">шаг 4</p>
                       <p class="plan__box-txt">Заполняет<br>
                         личные данные</p>
                     </div>
-                    <div class="plan__box">
+                    <div class="plan__box" data-aos="zoom-in-up">
                       <div class="plan__box-nomber">05</div>
                       <p class="plan__box-stap">шаг 5</p>
                       <p class="plan__box-txt">Оплачивает заказ<br>
                         и его доставку</p>
                     </div>
-                    <div class="plan__box plan__box-op">
+                    <div class="plan__box plan__box-op" data-aos="zoom-in-up">
                       <div class="plan__box-nomber">06</div>
                       <p class="plan__box-stap">шаг 6</p>
                       <p class="plan__box-txt">Получает<br>
@@ -374,7 +403,7 @@
               </div>
             </section>
             <section class="calc">
-              <img class="cirlce3" src="assets/images/icon/bgitem.png" alt="">
+              <img class="cirlce3" src="assets/images/icon/bgitem.png" alt="" >
               <p class="calc-bg">КАЛЬКУЛЯТОР</p>
               <div class="container">
                 <div class="calc__wrapper">
@@ -470,14 +499,14 @@
               </div>
               <div id="slider-items" class="swiper-container">
                 <div class="swiper-wrapper">
-                  <div class="swiper-slide" style="background-image:url(assets/images/base/1.png)"></div>
-                  <div class="swiper-slide" style="background-image:url(assets/images/base/2.png)"></div>
-                  <div class="swiper-slide" style="background-image:url(assets/images/base/3.png)"></div>
-                  <div class="swiper-slide" style="background-image:url(assets/images/base/4.png)"></div>
-                  <div class="swiper-slide" style="background-image:url(assets/images/base/3.png)"></div>     
+                  <div class="swiper-slide" style="background-image:url(assets/images/base/1.jpg)"></div>
+                  <div class="swiper-slide" style="background-image:url(assets/images/base/2.jpg)"></div>
+                  <div class="swiper-slide" style="background-image:url(assets/images/base/3.jpg)"></div>
+                  <div class="swiper-slide" style="background-image:url(assets/images/base/4.jpg)"></div>
+                  <div class="swiper-slide" style="background-image:url(assets/images/base/5.jpg)"></div>     
                 </div>
               </div>
-              <a href="#" class="items__btn">Перейти в каталог</a>
+              <a href="#" class="items__btn" data-aos="zoom-in-up">Перейти в каталог</a>
             </section>
             <section class="news">
               <div class="container">
@@ -486,14 +515,14 @@
                   <p class="subtitle">Самые свежие новости товарного китая</p>      
                   <div id="slider-news" class="swiper-container">
                     <div class="swiper-wrapper">
-                      <div class="swiper-slide">
-                        <div class="news__image">
+                      <div class="swiper-slide" data-aos="fade-up"  data-aos-delay="0">
+                        <a href="#" class="news__image">
                           <picture>
                             <source srcset="assets/images/news/new1.webp" type="image/webp">
                             <img src="assets/images/news/new1.jpg" alt="">
                           </picture>
                           <p class="news__date">2020-12-22</p>
-                        </div>
+                        </a>
                         <h4 class="news__title">Китайский Новый год! Отправка
                           заказов</h4>
                         <p class="news__text">Уважаемые Клиенты! Приближается Китайский Новый Год и карго компании, которые доставляют ваши заказы из Китая в Россию будут принимать груз к отправке ДО 10 января!</p>
@@ -501,14 +530,14 @@
                           <a href="#">Подробнее <img src="assets/images/icon/arrow-orange.svg" alt=""></a>
                         </div>
                       </div>  
-                      <div class="swiper-slide">
-                        <div class="news__image">
+                      <div class="swiper-slide" data-aos="fade-up"  data-aos-delay="100">
+                        <a href="#" class="news__image">
                           <picture>
                             <source srcset="assets/images/news/new2.webp" type="image/webp">
                             <img src="assets/images/news/new2.jpg" alt="">
                           </picture>
                           <p class="news__date">2020-12-20</p>
-                        </div>
+                        </a>
                         <h4 class="news__title">Работа сайта во время <br>
                           Китайского Нового года</h4>
                         <p class="news__text">Уважаемые Клиенты! Приближается Китайский Новый Год и карго компании, которые доставляют ваши заказы из Китая в Россию будут принимать груз к отправке ДО 10 января!</p>
@@ -516,14 +545,14 @@
                           <a href="#">Подробнее <img src="assets/images/icon/arrow-orange.svg" alt=""></a>
                         </div>
                       </div>    
-                      <div class="swiper-slide">
-                        <div class="news__image">
+                      <div class="swiper-slide" data-aos="fade-up"  data-aos-delay="150">
+                        <a href="#" class="news__image">
                           <picture>
                             <source srcset="assets/images/news/new3.webp" type="image/webp">
                             <img src="assets/images/news/new3.jpg" alt="">
                           </picture>
                           <p class="news__date">2020-12-17</p>
-                        </div>
+                        </a>
                         <h4 class="news__title">Самостоятельный выкуп <br>
                           товаров с китайских сайтов</h4>
                         <p class="news__text">Если Вы самостоятельно выкупаете товар на таобао или на любом другом сайте в Китае, Вы можете отправлять свои посылки через наш сайт !
@@ -532,14 +561,14 @@
                           <a href="#">Подробнее <img src="assets/images/icon/arrow-orange.svg" alt=""></a>
                         </div>
                       </div> 
-                      <div class="swiper-slide">
-                        <div class="news__image">
+                      <div class="swiper-slide" data-aos="fade-up"  data-aos-delay="200">
+                        <a href="#" class="news__image">
                           <picture>
                             <source srcset="assets/images/news/new4.webp" type="image/webp">
                             <img src="assets/images/news/new4.jpg" alt="">
                           </picture>
                           <p class="news__date">2020-12-15</p>
-                        </div>
+                        </a>
                         <h4 class="news__title">Смена курса юаня с 20.08.19 г.<br> 
                           9.9 рублей за 1 юань!</h4>
                         <p class="news__text">Уважаемые клиенты ! С 20.08.19 г. курс на сайте будет равен 9.9 рублей за 1 юань! Все заказы имеющие статус «счёт выставлен» и оплаченные с 20.08.19 г. после 00-00 часов по московскому времени</p>
@@ -548,13 +577,13 @@
                         </div>
                       </div>  
                       <div class="swiper-slide">
-                        <div class="news__image">
+                        <a href="#" class="news__image">
                           <picture>
                             <source srcset="assets/images/news/new4.webp" type="image/webp">
                             <img src="assets/images/news/new4.jpg" alt="">
                           </picture>
                           <p class="news__date">2020-12-15</p>
-                        </div>
+                        </a>
                         <h4 class="news__title">Смена курса юаня с 20.08.19 г. 9.9 рублей за 1 юань!</h4>
                         <p class="news__text">Уважаемые клиенты ! С 20.08.19 г. курс на сайте будет равен 9.9 рублей за 1 юань! Все заказы имеющие статус «счёт выставлен» и оплаченные с 20.08.19 г. после 00-00 часов по московскому времени</p>
                         <div class="calc__box-link">            
@@ -676,9 +705,12 @@
           </div>  
         </footer>
     </div>
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>   
     <script src="assets/js/select.js"></script>
     <script src="assets/js/app.js"></script>
+    <script>
+        
+    </script>
 </body>
 </html>
